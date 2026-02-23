@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JobTrack Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dashboard -->
+  <section class="dashboard">
+    <h1 class="logo">JobTrack</h1>
+
+    <div class="dashboard-cards">
+      <div class="card">
+        <h3>Total Jobs</h3>
+        <p id="total-count">8</p>
+      </div>
+
+      <div class="card">
+        <h3>Interview</h3>
+        <p id="interview-count">0</p>
+      </div>
+
+      <div class="card">
+        <h3>Rejected</h3>
+        <p id="rejected-count">0</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Available Jobs Section -->
+  <section class="jobs-section">
+
+    <div class="section-header">
+      <h2>Available Jobs</h2>
+      <p id="section-count">8 Jobs</p>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" data-tab="all">All</button>
+      <button class="tab" data-tab="interview">Interview</button>
+      <button class="tab" data-tab="rejected">Rejected</button>
+    </div>
+
+    <div id="jobs-container" class="jobs-container"></div>
+
+    <div id="empty-message" class="empty hidden">
+      <img src="https://cdn-icons-png.flaticon.com/512/4076/4076478.png" width="100">
+      <h3>No jobs Available</h3>
+      <p>You haven't added any jobs to this category yet.</p>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
