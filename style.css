@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* Dashboard */
+.dashboard {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  width: 180px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.2);
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Section */
+.jobs-section {
+  background: #f8fafc;
+  color: black;
+  padding: 40px 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-header h2 {
+  font-size: 22px;
+}
+
+/* Tabs */
+.tabs {
+  margin: 25px 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: #e2e8f0;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.tab.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* Cards */
+.jobs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.job-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card h3 {
+  margin: 0;
+}
+
+.salary {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.btn-group {
+  margin-top: 15px;
+}
+
+.btn-group button {
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.interview-btn {
+  background: #22c55e;
+  color: white;
+}
+
+.reject-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.delete-btn {
+  background: #334155;
+  color: white;
+}
+
+.btn-group button:hover {
+  opacity: 0.8;
+}
+
+/* Empty */
+.empty {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
