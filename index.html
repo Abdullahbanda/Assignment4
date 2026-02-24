@@ -2,39 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JobTrack Dashboard</title>
+  <title>Job Application Tracker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Dashboard -->
   <section class="dashboard">
-    <h1 class="logo">JobTrack</h1>
+    <h1>Job Application Tracker</h1>
 
-    <div class="dashboard-cards">
-      <div class="card">
-        <h3>Total Jobs</h3>
-        <p id="total-count">8</p>
+    <div class="stats">
+      <div class="stat-box">
+        <p>Total</p>
+        <h2 id="total-count">8</h2>
       </div>
 
-      <div class="card">
-        <h3>Interview</h3>
-        <p id="interview-count">0</p>
+      <div class="stat-box">
+        <p>Interview</p>
+        <h2 id="interview-count" class="green">0</h2>
       </div>
 
-      <div class="card">
-        <h3>Rejected</h3>
-        <p id="rejected-count">0</p>
+      <div class="stat-box">
+        <p>Rejected</p>
+        <h2 id="rejected-count" class="red">0</h2>
       </div>
     </div>
   </section>
 
-  <!-- Available Jobs Section -->
+  <!-- Jobs Section -->
   <section class="jobs-section">
 
-    <div class="section-header">
-      <h2>Available Jobs</h2>
-      <p id="section-count">8 Jobs</p>
+    <div class="jobs-header">
+      <h3>Available Jobs</h3>
+      <span id="section-count">8 jobs</span>
     </div>
 
     <div class="tabs">
@@ -46,13 +46,12 @@
     <div id="jobs-container" class="jobs-container"></div>
 
     <div id="empty-message" class="empty hidden">
-      <img src="https://cdn-icons-png.flaticon.com/512/4076/4076478.png" width="100">
-      <h3>No jobs Available</h3>
-      <p>You haven't added any jobs to this category yet.</p>
+      <h4>No jobs Available</h4>
+      <p>You haven't added any job in this category yet.</p>
     </div>
 
   </section>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
